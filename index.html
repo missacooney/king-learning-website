@@ -2,78 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>King Learning Consortium</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #FFD700;
     }
-
     header {
-      background-color: #00539C;
-      color: white;
-      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      background-color: #111;
+      border-bottom: 2px solid #FFD700;
+    }
+    header img {
+      height: 60px;
+      margin-right: 20px;
+    }
+    header h1 {
+      font-size: 2rem;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 2rem;
+    }
+    .card {
+      background-color: #222;
+      border: 1px solid #FFD700;
+      border-radius: 10px;
+      padding: 1.5rem;
       text-align: center;
+      transition: transform 0.2s ease-in-out;
     }
-
-    main {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+    .card:hover {
+      transform: translateY(-5px);
+      background-color: #333;
     }
-
-    h1 {
-      margin: 0;
-      font-size: 2.5rem;
+    .card h2 {
+      color: #FFD700;
     }
-
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-    }
-
-    ul {
-      padding-left: 20px;
-      line-height: 1.6;
-    }
-
-    li {
-      font-size: 1.1rem;
-    }
-
     footer {
       text-align: center;
-      padding: 20px;
-      background-color: #e9ecef;
-      color: #555;
-      margin-top: 40px;
+      padding: 1rem;
+      border-top: 1px solid #FFD700;
+      background-color: #111;
+      margin-top: 2rem;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Welcome to King Learning Consortium</h1>
+    <img src="logo.png" alt="King Learning Consortium Logo">
+    <h1>King Learning Consortium</h1>
   </header>
 
-  <main>
-    <p>We specialize in professional development for educators:</p>
-    <ul>
-      <li>Instructional Coaching</li>
-      <li>Content vs Student Engagement</li>
-      <li>Curriculum Design, Alignment, and Support</li>
-      <li>Classroom Management</li>
-      <li>Student Data Analysis and Planning</li>
-    </ul>
-  </main>
+  <section class="services">
+    <a href="#instructional-coaching" class="card">
+      <h2>Instructional Coaching</h2>
+      <p>Personalized support for teacher growth and effectiveness.</p>
+    </a>
+    <a href="#content-vs-student-engagement" class="card">
+      <h2>Content vs Student Engagement</h2>
+      <p>Strategies to distinguish and improve both forms of engagement.</p>
+    </a>
+    <a href="#curriculum-support" class="card">
+      <h2>Curriculum Design, Alignment and Support</h2>
+      <p>Align instruction with standards and build strong curriculum plans.</p>
+    </a>
+    <a href="#classroom-management" class="card">
+      <h2>Classroom Management</h2>
+      <p>Tools and systems for effective, respectful learning environments.</p>
+    </a>
+    <a href="#data-analysis" class="card">
+      <h2>Student Data Analysis and Planning Support</h2>
+      <p>Use data to drive instruction and meet student needs.</p>
+    </a>
+  </section>
 
   <footer>
-    &copy; 2025 King Learning Consortium
+    <p>&copy; 2025 King Learning Consortium. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
 
